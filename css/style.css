@@ -1,0 +1,154 @@
+/*Austin Smitherman
+Project 3
+CINS 110
+style.css*/
+
+*::after, *::before {
+  content: '';
+}
+
+html, body, div, h1, ul, li, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4e5359;
+  background-color: #f3f3f5;
+}
+
+a {
+  color:  #264d73;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  height: 240px;
+  line-height: 240px;
+  text-align: center;
+  background-color:  #264d73;
+}
+header h1 {
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 36px;
+}
+
+.listing {
+  position: relative;
+  width: 90%;
+  max-width: 1024px;
+  margin: 4em auto;
+  /*box-shadow: none;*/
+}
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  /*padding: 30px;*/
+  /*height: 70px;*/
+}
+.nav a {
+  /*float:right;*/
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 28px 0 16px;
+  background-color: #4e5359;
+  color: #ffffff;
+  /*white-space: nowrap;*/
+  /*border-bottom: 1px solid #555b61;*/
+}
+
+.nav li {
+  border-right: 0px;
+  color: black;
+}
+
+.nav a::before, .nav a::after {
+  position: absolute;
+}
+
+  .nav a::before {
+    /* decorative rectangle on the left visible for the selected item */
+    display: block;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 7px;
+    background-color:  #264d73;
+    opacity: 0;
+  }
+  .nav .selected {
+    background: #42464b;
+  }
+  .nav .selected::before {
+    opacity: 1;
+  }
+
+
+.content-item {
+  position: static;
+  height: auto;
+  width: auto;
+  top: 0;
+  right: 0;
+  background: transparent;
+  padding: 0;
+  overflow: auto;
+}
+
+.content-group {
+  display: block;
+  background: #ffffff;
+}
+.content-group li:first-child {
+  margin-top: 2em;
+}
+
+.content-title {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 300;
+  padding: 24px 72px 24px 24px;
+}
+
+
+  /* arrow icon on the right */
+.content-title::before, .content-title::after {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  height: 2px;
+  width: 13px;
+  background: #264d73;
+}
+.content-title::before {
+  transform: rotate(45deg);
+  right: 32px;
+}
+.content-title::after {
+  transform: rotate(-45deg);
+}
+
+.content {
+  display: block;
+  padding: 0 24px 30px;
+}
+.content p {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #260d0d;
+}
