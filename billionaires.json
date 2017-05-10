@@ -1,4 +1,4 @@
-billionaires = '[
+[
   {
     "wealth": {
       "worth in billions": 1.0, 
@@ -88875,4 +88875,4 @@ billionaires = '[
     }, 
     "name": "Zygmunt Solorz-Zak"
   }
-]'
+]
