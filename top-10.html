@@ -4,27 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-  <script>
-
-      $(function() {
-
-
-     var people = [];
-
-     $.getJSON('http://think.cs.vt.edu/corgis/json/billionaires/billionaires.json?forcedownload=1', function(data) {
-         $.each(data.name, function(i, f) {
-            var Name = f.name + " " + f.company;
-             $(Name).appendTo("#content-title");
-       });
-
-     });
-
-  });
-  </script>
+  <script type="text/javascript" src="billionaires.json"></script>
+  <script type="text/javascript" src="js/pilliars.js"></script>
+  <script type="text/javascript">
+    document.write("\<script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'>\<\/script>");
+</script>
   <title>PoS</title>
 </head>
-<body>
+<body onload="load()">
 <header>
   <h1>Pilliars of Success</h1>
   <!-- <h4>Multi-decade database of the super-rich</h4> -->
