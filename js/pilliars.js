@@ -13,7 +13,7 @@ function load(){
   //   }).appendTo( "body" );
   // });
   // JSONArray obj = newASONArray(items.toString());
-  for(int i=0; i<items.lenth();i++) {
+  for(var i=0; i<items.lenth();i++) {
     JSONObject jsonobj = items.getJSONObject(i);
     document.GetElementById("bill").innerHTML = jsonobj.getString("name");
     document.GetElementById("company").innerHTML = jsonobj.getString("company.name");
