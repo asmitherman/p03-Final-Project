@@ -13,6 +13,6 @@ $.getJSON( "https://asmitherman.github.io/p03-Final-Project/billionaires.json", 
 
 
 function load () {
-  var mydata = JSON.parse(billionaires);
-  alert(mydata[0].name);
+  // var mydata = JSON.parse(billionaires);
+  // alert(mydata[0].name);
 }
