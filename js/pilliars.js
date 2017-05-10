@@ -1,7 +1,7 @@
 
 
-
-function load () {
-  // var mydata = JSON.parse(billionaires);
-  // alert(mydata[0].name);
-}
+//
+// function load () {
+//   // var mydata = JSON.parse(billionaires);
+//   // alert(mydata[0].name);
+// }
