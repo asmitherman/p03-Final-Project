@@ -20,4 +20,3 @@ function load(){
   }
     // String comp_name = jsonobj.getString("company.name");
   }
-}
