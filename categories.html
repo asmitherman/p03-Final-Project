@@ -10,7 +10,7 @@
 
   <title>PoS</title>
 </head>
-<body onload="check10()">
+<body>
 <header>
   <h1>Pilliars of Success</h1>
   <!-- <h4>Multi-decade database of the super-rich</h4> -->
@@ -19,10 +19,16 @@
   <div class="nav">
     <ul>
       <li><a href="index.html">Billionairs</a></li>
-      <li><a class="selected">Top 10</a></li>
-      <li><a href="categories.html">Categories</a></li>
+      <li><a href="top-10.html">Top 10</a></li>
+      <li><a class="selected">Categories</a></li>
     </ul>
   </div>
+
+  <form name="form">
+    <input type="radio" onchange="populate_category()"name="type" value="founder non-finance" checked> founder non-finance<br>
+    <input type="radio" onchange="populate_category()"name="type" value="self-made finance"> self-made finance<br>
+    <input type="radio" onchange="populate_category()"name="type" value="inherited"> inherited <br>
+  </form>
 
   <div class="content-item">
     <ul class="content-group">
