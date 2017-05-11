@@ -13,10 +13,10 @@ function load(){
     }).appendTo( "body" );
   });
   // JSONArray obj = newASONArray(items.toString());
-  for(var i=0; i<items.lenth();i++) {
-    items[i];
+  // for(var i=0; i<items.lenth();i++) {
+  //   items[i];
     // document.GetElementById("bill").innerHTML = jsonobj.getString("name");
     // document.GetElementById("company").innerHTML = jsonobj.getString("company.name");
-  }
+  // }
     // String comp_name = jsonobj.getString("company.name");
   }
