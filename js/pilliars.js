@@ -4,7 +4,8 @@ function load(){
     var items = [];
     $.each( data, function( key, val ) {
       items.push( "<li id='" + key + "'> <a class=\"content-title\">"
-      + val.name + "<div class=\"content\"> <p>" + val.type + "</p> </div> </li>" });
+      + val.name + "<div class=\"content\"> <p>" + val.type + "</p> </div> </li>");
+     });
 
     $( "<ul/>", {
       "class": "my-new-list",
