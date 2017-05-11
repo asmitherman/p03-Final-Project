@@ -19,4 +19,4 @@ function load(){
     // document.GetElementById("company").innerHTML = jsonobj.getString("company.name");
   }
     // String comp_name = jsonobj.getString("company.name");
-  }
+  // }
