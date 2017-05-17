@@ -9,10 +9,12 @@ function load(){
       "<p>Type: " + val.wealth.type + "</p>" +
       "<p> Company: " + val.company.name + "</p>" +
       "<p> Location: " + val.location.region + "</p>" +
-      "</div><div style=\"padding-left:100px\"><p>Rank:  " + val.rank + "</p>" +
+      "</div><div style=\"float:right\"><p>Rank:  " + val.rank + "</p>" +
       "<p>Gender:  " + val.demographics.gender + "</p>" +
+      "<p>Year: " + val.year + "</p>" +
       "</div>" +
-      "</div> </li>");
+      "</div> </li> <br>");
+
            });
 
     $( ".content-group").append(items.join( "" ));
@@ -22,7 +24,7 @@ function check10(){
   $.getJSON( "https://asmitherman.github.io/p03-Final-Project/js/billionaires.json", function( data ) {
     var items = [];
     $.each( data, function( key, val ) {
-      for(var i=0;i<10;i++) {
+      for(var i=1;i<=10;i++) {
           if(val.rank == i.toString()) {
           items.push( "<li id='row '> <a class=\"content-title\">"
           + val.name + "<div class=\"content\"><div style=\"float:left\"> <p>Wealth: $"
@@ -30,10 +32,10 @@ function check10(){
           "<p>Type: " + val.wealth.type + "</p>" +
           "<p> Company: " + val.company.name + "</p>" +
           "<p> Location: " + val.location.region + "</p>" +
-          "</div><div style=\"padding-left:100px\"><p>Rank:  " + val.rank + "</p>" +
+          "</div><div style=\"float:right;\"><p>Rank:  " + val.rank + "</p>" +
           "<p>Gender:  " + val.demographics.gender + "</p>" +
-          "</div>" +
-          "</div> </li>");
+          "<p>Year: " + val.year + "</p>" +
+          "</div> </li> <br>");
             }
           }
         });
@@ -60,10 +62,10 @@ function populate_category(){
                 "<p>Type: " + val.wealth.type + "</p>" +
                 "<p> Company: " + val.company.name + "</p>" +
                 "<p> Location: " + val.location.region + "</p>" +
-                "</div><div style=\"padding-left:100px\"><p>Rank:  " + val.rank + "</p>" +
+                "</div><div style=\"float:right;\"><p>Rank:  " + val.rank + "</p>" +
                 "<p>Gender:  " + val.demographics.gender + "</p>" +
-                "</div>" +
-                "</div> </li>");
+                "<p>Year: " + val.year + "</p>" +
+                "</div> </li> <br>");
                   }
                   });
                   $( ".content-group").append(items.join( "" ));
@@ -73,15 +75,28 @@ function populate_category(){
   }
   // $('.content-group').remove();
 }
-  //   $( "<ul/>", {
-  //     "class": "content-group",
-  //     html: items.join( "" )
-  //   }).appendTo( "body" );
-  // });
-  // JSONArray obj = newASONArray(items.toString());
-  // for(var i=0; i<items.lenth();i++) {
-  //   items[i];
-    // document.GetElementById("bill").innerHTML = jsonobj.getString("name");
-    // document.GetElementById("company").innerHTML = jsonobj.getString("company.name");
-    // String comp_name = jsonobj.getString("company.name");
-  // }
+//
+// function toggleContent() {
+//    // get the clock
+//    var myClock = document.getElementById('clock');
+//
+//    // get the current value of the clock's display property
+//    var displaySetting = myClock.style.display;
+//
+//    // also get the clock button, so we can change what it says
+//    var clockButton = document.getElementById('clockButton');
+//
+//    // now toggle the clock and the button text, depending on current state
+//    if (displaySetting == 'block') {
+//      // clock is visible. hide it
+//      myClock.style.display = 'none';
+//      // change button text
+//      clockButton.innerHTML = 'Show clock';
+//    }
+//    else {
+//      // clock is hidden. show it
+//      myClock.style.display = 'block';
+//      // change button text
+//      clockButton.innerHTML = 'Hide clock';
+//    }
+//  }
